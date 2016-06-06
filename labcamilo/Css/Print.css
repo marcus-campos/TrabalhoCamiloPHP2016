@@ -1,0 +1,84 @@
+.tabs, #BTN_Voltar, #BTN_Imprimir, #BTN_Norma_Tecnica, #BTN_Norma_Tecnica_Consulta, #BTN_Excel
+{
+	display: none !important;
+}
+
+.panes
+{
+	border: none !important;
+	margin: 0px !important;
+}
+
+body
+{
+	margin: 0px !important;	
+}
+
+.base
+{
+	border: none !important;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+#buscando
+{
+	display: none !important;
+}
+
+.naoimprimir
+{
+	display: none !important;
+}
+
+
+.titulo_pagina, .titulo_topicos
+{
+	padding-left: 0px !important;
+	margin-left: 0px !important;
+}
+
+
+table.busca tr td, table.formulario tr td
+{
+    border: 1px solid #666 !important;
+}
+
+table.formulario tr td td
+{
+    border: none !important;
+}
+
+input, select
+{
+    border:  none !important;
+}
+
+.form-control, .titulo_inc, label
+{
+	padding: 0px !important;
+	font-size: 11px !important;
+}
+
+.titulo_topicos
+{
+	border-left: none  !important;
+	font-weight: bold   !important;
+}
+
+.page-title
+{
+	font-weight: bold   !important;
+	color: #000 !important;
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+	font-size: 18px !important;
+	font-family: 'Open Sans', sans-serif !important;
+	letter-spacing: normal !important;
+	text-transform:uppercase  !important;
+}
+
+.page-title #Descricao
+{
+	color: #000 !important;
+}

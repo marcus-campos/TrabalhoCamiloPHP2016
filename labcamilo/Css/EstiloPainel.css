@@ -1,0 +1,1157 @@
+﻿*
+{
+	font-family: Arial,Verdana;
+}
+
+body 
+{
+	background: #FFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+.fundo_acesso
+{
+	background: url(../Img/bg_fundo_login.jpg) no-repeat top center;
+}
+
+#logando
+{
+	margin: auto;
+	margin-top: 20px;
+	width: 500px;
+	
+}
+
+#logo_tmt_login
+{
+	margin: auto;
+	width: 139px;
+	margin-top: 20px;
+}
+
+.texto_normal
+{
+	font-size: 12px;
+	color: #666;
+}
+
+.texto_area
+{
+	font-family: Verdana, Arial;
+}
+
+.al_login
+{
+	text-align: right;
+}
+
+.al_login input, .al_login select
+{
+	width: 100px;
+	padding: 3px 0px;
+}
+.titulo_painel
+{
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	color: #666;
+}
+
+.clear
+{
+	clear: both;
+}
+
+#Menu
+{
+    border-top: 1px solid #000000;
+}
+
+#saudacao
+{
+	height: 26px;
+	background: url(../Img/bg_fundo_saudacao.png) repeat-x;
+}
+
+#saudacao_sair
+{
+	height: 30px;
+	background: url(../Img/btn_sair.png) no-repeat;
+	width: 73px;
+	text-indent: -10000px;
+	float:right;
+	margin-right: 10px;
+	margin-bottom: -10px;
+}
+
+#saudacao_texto
+{
+	float: left;
+	width: 600px;
+	color: #FFF;
+	font-weight: bold;
+	font-family: Verdana, Arial;
+	font-size: 10px;
+	padding-top: 10px;
+	padding-left: 4px;
+}
+
+#btn_sair
+{
+	margin-top: 12px;
+	color: #333;
+	font-family: Verdana, Arial;
+	display: block;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+}
+#btn_sair:hover
+{
+	text-decoration: underline;
+}
+
+/* root element for tabs  */
+ul.tabs { 
+	list-style:none; 
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;	
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	background: url(../Img/tabs.png) no-repeat -652px 0;
+	font-size:11px;
+	display:block;
+	height: 30px;  
+	line-height:30px;
+	width: 111px;
+	text-align:center;	
+	text-decoration:none;
+	color:#000;
+	padding:0px;
+	margin:0px;	
+	position:relative;
+	top:1px;
+	font-family: Verdana, Arial;
+}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover, .pg_ativo {
+	background-position: -652px -31px;	
+	color:#fff;	
+}
+
+/* active tab uses a class name "current". it's highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	background-position: -652px -62px;		
+	cursor:default !important; 
+	color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+ul.tabs a.w1 			{ background-position: -519px 0; width:134px; }
+ul.tabs a.w1:hover 	{ background-position: -519px -31px; }
+ul.tabs a.w1.current { background-position: -519px -62px; }
+
+/* width 2 */
+ul.tabs a.w2 			{ background-position: -366px -0px; width:154px; }
+ul.tabs a.w2:hover 	{ background-position: -366px -31px; }
+ul.tabs a.w2.current { background-position: -366px -62px; }
+
+
+/* width 3 */
+ul.tabs a.w3 			{ background-position: -193px -0px; width:174px; }
+ul.tabs a.w3:hover 	{ background-position: -193px -31px; }
+ul.tabs a.w3.current { background-position: -193px -62px; }
+
+/* width 4 */
+ul.tabs a.w4 			{ background-position: -0px -0px; width:194px; }
+ul.tabs a.w4:hover 	{ background-position: -0px -31px; }
+ul.tabs a.w4.current { background-position: -0px -62px; }
+
+
+/* initially all panes are hidden */ 
+div.panes div.pane {
+	display:none;
+}
+
+div.panes div.base {
+	background-color:#FFFFFF;
+	border-color: #999999;
+	border-style:none solid solid;
+	border-width:0 1px 1px;
+	font-size:14px;
+	padding:15px 10px;	
+	min-height: 380px;
+}
+div.panes div.base_popup {
+	background-color:#FFFFFF;
+	border-color: #999999;
+	border-width: 1px;
+	font-size:14px;
+	padding:15px 10px;	
+}
+#Frame
+{
+	height:100%;
+	min-height: 450px;
+	margin: 10px;
+	border: 1px dotted #666;
+	padding: 10px;
+}
+
+.titulo_pagina
+{
+	background: url(../Img/bg_titulo_nv.png) no-repeat left center;
+	line-height: 30px;
+	color: #3887DB;
+	font-size: 14px;
+	padding-left: 40px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+table.grid, table.busca
+{
+	border-collapse:collapse;
+	width: 100%;
+}
+
+table.formulario
+{
+	border-collapse:collapse;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+table.busca
+{
+	margin-bottom: 20px;
+}
+
+table.busca tr td, table.formulario tr td
+{
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	font-size: 10px;
+	height: 25px;
+}
+
+
+table.grid tr td, table.grid tr th
+{
+	border: 1px solid #666;
+	padding: 4px 2px;
+	font-size: 10px;
+}
+
+table.grid tr.titulo td
+{
+	background: #CCC;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+}
+
+table.busca tr.titulo td
+{
+	font-weight: bold;
+	text-align: left;
+	font-size: 12px;
+}
+
+table.grid tr.titulo th
+{
+	background: #CCC;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+}
+
+table.grid .rodape
+{
+	background: #CCC;
+	font-weight: bold;
+	text-align: right;
+	font-size: 12px;
+}
+
+table.grid tr.linha_1 td
+{
+	background: #FFFFFF;
+}
+
+table.grid tr.linha_2 td
+{
+	background: #EFEFEF;
+}
+
+table.grid tr:hover, table.grid tr.linha_2:hover td
+{
+	background: #E0EAEF;
+}
+
+
+table.grid tr.linha_3 td
+{
+	background: #FFFFCF;
+}
+
+.busca_txb
+{
+	font-size: 10px;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+}
+
+.busca_sl
+{
+	font-size: 10px;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+}
+
+.txb
+{
+	font-size: 10px;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	width: 90%;
+}
+
+.sl
+{
+	font-size: 10px;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	width: 90%;
+}
+
+.busca_txb:hover, .busca_sl:hover,.busca_txb:focus, .busca_sl:focus, .txb:focus, .txb:hover, .sl:focus, .sl:hover
+{
+	background: #EFEFEF;
+}
+
+.btn_buscar
+{
+	width: 85px;
+	background: url(../Img/page_find.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+.btn_money
+{
+	width: 155px;
+	background: url(../Img/money_dollar.png) no-repeat 138px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_limpar
+{
+	width: 85px;
+	background: url(../Img/page_refresh.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.btn_incluir
+{
+	width: 85px;
+	background: url(../Img/page_add.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_novo
+{
+	width: 130px;
+	background: url(../Img/page_add.png) no-repeat 105px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+.btn_autorizar
+{
+	width: 100px;
+	background: url(../Img/star.png) no-repeat 75px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_nao_autorizar
+{
+	width: 125px;
+	background: url(../Img/stop.png) no-repeat 100px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_reprovado
+{
+	width: 100px;
+	background: url(../Img/stop.png) no-repeat 75px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_proximo
+{
+	width: 100px;
+	background: url(../Img/page_go.png) no-repeat 75px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_anterior
+{
+	width: 85px;
+	background: url(../Img/page_back.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_alterar
+{
+	width: 85px;
+	background: url(../Img/page_edit.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+.btn_imprimir
+{
+	width: 85px;
+	background: url(../Img/printer.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_enviar
+{
+	width: 85px;
+	background: url(../Img/email_go.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_enviar_email
+{
+	width: 125px;
+	background: url(../Img/email_go.png) no-repeat 100px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_excluir
+{
+	width: 85px;
+	background: url(../Img/page_delete.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_excel
+{
+	width: 230px;
+	background: url(../Img/page_excel.png) no-repeat 205px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+.btn_excluir_selecionado
+{
+	width: 160px;
+	background: url(../Img/page_delete.png) no-repeat 140px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+.btn_fotos
+{
+	width: 200px;
+	background: url(../Img/picture.png) no-repeat 180px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_carregar_foto
+{
+	width: 130px;
+	background: url(../Img/picture_go.png) no-repeat 105px center #EFEFEF;
+	border: 1px solid #CCC;
+	cursor: pointer;
+	padding-right: 20px;
+	padding-left: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.btn_selecionar_todos
+{
+	width: 140px;
+	background: url(../Img/accept.png) no-repeat 120px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_ciente
+{
+	width: 150px;
+	background: url(../Img/ok.png) no-repeat 130px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_Crop
+{
+	width: 110px;
+	background: url(../Img/shape_handles.png) no-repeat 90px center #EFEFEF;
+	border: 1px solid #CCC;
+	cursor: pointer;
+	padding-right: 20px;
+	padding-left: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.btn_Resize
+{
+	width: 120px;
+	background: url(../Img/arrow_in.png) no-repeat 100px center #EFEFEF;
+	border: 1px solid #CCC;
+	cursor: pointer;
+	padding-right: 20px;
+	padding-left: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.btn_buscar:hover
+{
+	background: url(../Img/page_find.png) no-repeat 60px center #CCC;
+}
+
+
+.btn_ciente:hover
+{
+
+	background: url(../Img/ok.png) no-repeat 130px center #CCC;
+
+}
+
+.btn_money:hover
+{
+	background: url(../Img/money_dollar.png) no-repeat 138px center #CCC;
+}
+
+.btn_limpar:hover
+{
+	background: url(../Img/page_refresh.png) no-repeat 60px center #CCC;
+}
+.btn_incluir:hover
+{
+	background: url(../Img/page_add.png) no-repeat 60px center #CCC;
+}
+
+.btn_novo:hover
+{
+	background: url(../Img/page_add.png) no-repeat 105px center #CCC;
+}
+
+.btn_proximo:hover
+{
+	background: url(../Img/page_go.png) no-repeat 75px center #CCC;
+}
+
+.btn_anterior:hover
+{
+	background: url(../Img/page_back.png) no-repeat 60px center #CCC;
+}
+
+.btn_autorizar:hover
+{
+	background: url(../Img/star.png) no-repeat 75px center #CCC;
+}
+
+.btn_nao_autorizar:hover
+{
+	background: url(../Img/stop.png) no-repeat 100px center #CCC;
+}
+
+.btn_reprovado:hover
+{
+	background: url(../Img/stop.png) no-repeat 75px center #CCC;
+}
+
+.btn_imprimir:hover
+{
+	background: url(../Img/printer.png) no-repeat 60px center #CCC;
+}
+
+.btn_enviar:hover
+{
+	background: url(../Img/email_go.png) no-repeat 60px center #CCC;
+}
+
+.btn_enviar_email:hover
+{
+	background: url(../Img/email_go.png) no-repeat 100px center #CCC;
+}
+
+.btn_excluir:hover
+{
+	background: url(../Img/page_delete.png) no-repeat 60px center #CCC;
+}
+.btn_excluir_selecionado:hover
+{
+	background: url(../Img/page_delete.png) no-repeat 140px center #CCC;
+}
+.btn_selecionar_todos:hover
+{
+	background: url(../Img/accept.png) no-repeat 120px center #CCC;
+}
+.btn_excel:hover
+{
+	background: url(../Img/page_excel.png) no-repeat 205px center #CCC;
+}
+.btn_fotos:hover
+{
+	background: url(../Img/picture.png) no-repeat 180px center #CCC;
+}
+.btn_carregar_foto:hover
+{
+	background: url(../Img/picture_go.png) no-repeat 105px center #CCC;
+}
+.btn_Crop:hover
+{
+	background: url(../Img/shape_handles.png) no-repeat 90px center #CCC;
+}
+.btn_Resize:hover
+{
+	background: url(../Img/arrow_in.png) no-repeat 100px center #CCC;
+}
+#BT_Editar_foto
+{
+	display:block;	
+	width: 105px;
+	background: url(../Img/picture_edit.png) no-repeat 105px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+	height: 15px;
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+#BT_Editar_foto:hover
+{
+	background: url(../Img/picture_edit.png) no-repeat 105px center #CCC;
+}
+
+.grid_0
+{
+	background: #ccc;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 2px;
+}
+
+.titulo_inc
+{
+	font-weight: bold;
+	text-align: left;
+	font-size: 12px;
+}
+
+.titulo_inc_2
+{
+	font-weight: bold;
+	text-align: left;
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+
+tr.linha_titulo_inc td
+{
+	background: #EFEFEF;
+}
+
+.pg_ativo {
+	background-position: -652px -62px !important; 	
+	color:#000 !important;
+	cursor: default;	
+}
+
+.titulo_destaque
+{
+	font-weight: bold;
+	text-align: left;
+	font-size: 14px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#erro_sitema
+{
+	height: 100px;
+	background: url(../Img/icone_erro.png) 5px center no-repeat #DFA599;
+	padding-left: 60px;
+	border-top: 2px solid #CF3719;
+	border-bottom: 2px solid #CF3719;
+}
+.escondido
+{
+	display: none;
+}
+
+.subtitulo
+{
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	display: block;
+	font-size: 16px;
+	font-style: italic;
+}
+
+table .subtitulo
+{
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#LK_Tabela_Precos
+{
+	display: block;
+	width: 140px;
+	background: url(../Img/money_dollar.png) no-repeat 140px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+	height: 15px;
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+#LK_Tabela_Precos:hover
+{
+	background: url(../Img/money_dollar.png) no-repeat 140px center #CCC;
+}
+
+.btn_listar_Selecionados
+{
+
+	width: 200px;
+	background: url(../Img/tick.png) no-repeat 180px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_listar_Selecionados:hover
+{
+	background: url(../Img/tick.png) no-repeat 180px center #CCC;
+}
+.btn_listar_nao_Selecionados
+{
+
+	width: 210px;
+	background: url(../Img/tick_red.png) no-repeat 190px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_listar_nao_Selecionados:hover
+{
+	background: url(../Img/tick_red.png) no-repeat 190px center #CCC;
+}
+
+.Sem_Borda tr td
+{
+	border: none !important;
+	font-weight: bold;
+}
+.Titulo_Inicio
+{
+	border-bottom: 1px solid #CCC;
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 2px;
+}
+.Texto_Inicio
+{
+	text-align: left;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 4px 2px;
+	text-decoration:none;
+	color: #000;
+}
+
+a.Texto_Inicio:hover
+{
+	text-decoration: underline;
+	color: #333;
+}
+
+.fts
+{
+	color: #666;
+}
+
+#re_cadastros
+{
+	margin-top: 20px; 
+	background: url(../Img/cadastros.png) no-repeat #FFCE8C 5px center;  
+	padding-bottom: 10px; 
+	padding-left: 50px; 
+	border: 1px solid #FFA934; 
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#re_cadastros:hover
+{
+	background: url(../Img/cadastros.png) no-repeat #FFB44F 5px center;
+}
+
+#re_excel
+{
+	background: url(../Img/excel.png) no-repeat #B9E0AA 5px center;  
+	padding-bottom: 10px; 
+	padding-left: 50px; 
+	border: 1px solid #467225; 
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#re_excel:hover
+{
+	background: url(../Img/excel.png) no-repeat #98D183 5px center;
+}
+
+#re_enviar
+{
+	margin-top: 20px; 
+	background: url(../Img/submeter.png) no-repeat #849DE1 5px center;  
+	padding-left: 50px; 
+	padding-bottom: 10px; 
+	border: 1px solid #456DD3; 
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#re_enviar:hover
+{
+	background: url(../Img/submeter.png) no-repeat #6283D9 5px center;
+}
+#re_reenviar
+{
+	margin-top: 20px; 
+	background: url(../Img/refresh.png) no-repeat #E19D84 5px center;  
+	padding-left: 50px; 
+	padding-bottom: 10px; 
+	border: 1px solid #D36D45; 
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#re_reenviar:hover
+{
+	background: url(../Img/refresh.png) no-repeat #D98362 5px center;
+}
+#re_enviados
+{
+	margin-top: 20px; 
+	background: url(../Img/enviados.png) no-repeat #E2E2E2 5px center;  
+	padding-left: 50px; 
+	padding-bottom: 10px; 
+	border: 1px solid #CCC; 
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#re_enviados:hover
+{
+	background: url(../Img/enviados.png) no-repeat #DADADA 5px center;
+}
+
+li.current
+{
+	background: url(../Img/bg_menu_principal.png) no-repeat;
+	width: 139px;
+	height: 23px;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+
+.ger_disponivel
+{
+    background: url(../Img/img_gerenciamento.png)no-repeat top left;
+    padding-top: 24px;
+    width: 258px;
+    
+}
+
+.ger_aprovacao
+{
+    background: url(../Img/img_aprovacao.png)no-repeat top left;
+    padding-top: 24px;
+    width: 258px;
+    
+}
+
+.btn_gerenciar
+{
+	width: 72px;
+	height: 35px;
+	background: url(../Img/btn_gerenciar.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+
+.btn_selecionar
+{
+	width: 72px;
+	height: 35px;
+	background: url(../Img/btn_selecionar.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+
+#DataList1 tr td, #DataList1 tr
+{
+    border: none !important;
+}
+
+
+.bt_recusar_nv
+{
+	width: 176px;
+	height: 36px;
+	background: url(../Img/bt_recusar_nv.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+
+.bt_aprovar_nv
+{
+	width: 194px;
+	height: 36px;
+	background: url(../Img/bt_aprovar_nv.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.bt_buscar_nv
+{
+	width: 72px;
+	height: 35px;
+	background: url(../Img/btn_buscar.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.busca_txb_nv
+{
+	font-size: 12px;
+	background: url(../Img/bg_campo_pequeno.png) no-repeat;
+	border: none;
+	padding: 4px 5px;
+	width: 236px;
+	height: 21px;
+}
+
+
+.bt_cadastro_incluir_nv
+{
+	width: 151px;
+	height: 36px;
+	background: url(../Img/btn_novo_cadastro.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.bt_excluir_selecionados_nv
+{
+	width: 194px;
+	height: 36px;
+	background: url(../Img/btn_excluir_selecionados.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+
+.bt_cadastro_alterar_nv
+{
+	width: 162px;
+	height: 36px;
+	background: url(../Img/btn_alterar_nv.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.lb_txb_nv
+{
+	font-size: 12px;
+	background: url(../Img/bg_campo_pequeno.png) no-repeat;
+	border: none;
+	padding: 4px 5px;
+	width: 236px;
+	height: 21px;
+	display: block;
+	padding-top: 6px;
+}
+
+.bt_enviar_dados_nv
+{
+	width: 137px;
+	height: 36px;
+	background: url(../Img/btn_enviar_dados.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+
+.responsavel_txb_nv
+{
+	font-size: 12px;
+	background: url(../Img/bg_txt_responsavel.png) no-repeat;
+	border: none;
+	padding: 4px 5px;
+	width: 310px;
+	height: 21px;
+}
+
+
+.cpf_txb_nv
+{
+	font-size: 12px;
+	background: url(../Img/bg_txt_cpf.png) no-repeat;
+	border: none;
+	padding: 4px 5px;
+	width: 149px;
+	height: 21px;
+}
+
+
+.bt_solicitar_dados_nv
+{
+	width: 181px;
+	height: 36px;
+	background: url(../Img/btn_solicitar_impressao.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+
+#carrega {
+	position: fixed;
+	z-index: 999;
+	display: none;
+	background: #000 fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+}
+#carrega_texto {
+	display: none;
+	position: absolute;
+	text-align: left;
+	z-index: 999;
+	background: #FFF;
+	border: 2px solid #666;
+	width: 800px;
+	top: 10%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -52px;
+	padding: 20px;
+	font-size: 11px;
+}
+
+
+
+

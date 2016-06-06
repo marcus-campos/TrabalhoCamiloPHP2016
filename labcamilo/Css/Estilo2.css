@@ -1,0 +1,666 @@
+﻿*
+{
+	font-family: Verdana, Arial;
+}
+
+body 
+{
+	background: #FFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+.fundo_acesso
+{
+	background: url(../Img/bg_fundo_login.jpg) no-repeat top center;
+}
+
+.Sem_Borda tr td
+{
+	border: none !important;
+	font-weight: bold;
+}
+
+#logando
+{
+	width: 320px;
+	background: #FFF;
+	margin: 10px;
+	padding: 20px;
+}
+
+#Outros
+{
+	width: 320px;
+	background: #FFF;
+	margin: 10px;
+	padding: 20px;
+}
+
+#Lista_Erro_Logando ul
+{
+	margin-left: 10px;
+	padding-left: 0px;
+}
+
+#logo_tmt_login
+{
+	margin: auto;
+	width: 139px;
+	margin-top: 20px;
+}
+
+.al_login
+{
+	text-align: left;
+}
+
+.al_login input, .al_login select
+{
+	width: 100%;
+	padding: 5px 0px;
+	margin-top: 8px;
+}
+.titulo_painel
+{
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	color: #666;
+}
+
+.clear
+{
+	clear: both;
+}
+
+#Menu
+{
+	background: url(../Img/bgMenuTopo.gif) repeat-x #E6E6E6;
+	padding-top: 2px;
+}
+
+
+#saudacao
+{
+	height: 26px;
+	background: #1C5E6E;
+}
+
+#saudacao2
+{
+	height: 50px;
+	background: #1C5E6E;
+}
+
+#saudacao_sair
+{
+	height: 26px;
+	float: right;
+	background: url(../Img/bg_fundo_sair.png) no-repeat;
+	width: 132px;
+}
+
+#saudacao_texto
+{
+	float: left;
+	width: 600px;
+	color: #FFF;
+	font-weight: bold;
+	font-family: Verdana, Arial;
+	font-size: 10px;
+	padding-top: 10px;
+	padding-left: 4px;
+}
+
+.saudacao_texto2
+{
+	width: 600px;
+	color: #FFF;
+	font-weight: bold;
+	font-family: Verdana, Arial;
+	font-size: 10px;
+	padding-top: 10px;
+	padding-left: 4px;
+}
+
+.destaque
+{
+	font-weight: bold;
+	font-size: 12px !important;
+	color: #CE0404;
+}
+
+
+#btn_sair
+{
+	margin-top: 12px;
+	color: #333;
+	font-family: Verdana, Arial;
+	display: block;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+}
+#btn_sair:hover
+{
+	text-decoration: underline;
+}
+
+/* root element for tabs  */
+ul.tabs { 
+	list-style:none; 
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;	
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	background: url(../Img/tabs.png) no-repeat -652px 0;
+	font-size:11px;
+	display:block;
+	height: 30px;  
+	line-height:30px;
+	width: 111px;
+	text-align:center;	
+	text-decoration:none;
+	color:#000;
+	padding:0px;
+	margin:0px;	
+	position:relative;
+	top:1px;
+	font-family: Verdana, Arial;
+}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover, .pg_ativo {
+	background-position: -652px -31px;	
+	color:#fff;	
+}
+
+/* active tab uses a class name "current". it's highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	background-position: -652px -62px;		
+	cursor:default !important; 
+	color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+ul.tabs a.w1 			{ background-position: -519px 0; width:134px; }
+ul.tabs a.w1:hover 	{ background-position: -519px -31px; }
+ul.tabs a.w1.current { background-position: -519px -62px; }
+
+/* width 2 */
+ul.tabs a.w2 			{ background-position: -366px -0px; width:154px; }
+ul.tabs a.w2:hover 	{ background-position: -366px -31px; }
+ul.tabs a.w2.current { background-position: -366px -62px; }
+
+
+/* width 3 */
+ul.tabs a.w3 			{ background-position: -193px -0px; width:174px; }
+ul.tabs a.w3:hover 	{ background-position: -193px -31px; }
+ul.tabs a.w3.current { background-position: -193px -62px; }
+
+/* width 4 */
+ul.tabs a.w4 			{ background-position: -0px -0px; width:194px; }
+ul.tabs a.w4:hover 	{ background-position: -0px -31px; }
+ul.tabs a.w4.current { background-position: -0px -62px; }
+
+
+/* initially all panes are hidden */ 
+div.panes div.pane {
+	display:none;
+}
+
+div.panes div.base {
+	background-color:#FFFFFF;
+	border-color: #999999;
+	border-style:none solid solid;
+	border-width:0 1px 1px;
+	font-size:14px;
+	padding:15px 10px;	
+}
+
+#Frame
+{
+	height:100%;
+	margin: 10px;
+	border: 1px dotted #666;
+	padding: 10px;
+}
+
+.titulo_pagina
+{
+	background: url(../Img/icon_titulo.png) no-repeat left center;
+	line-height: 30px;
+	color: #1C5E6E;
+	font-size: 14px;
+	padding-left: 32px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+table.grid, table.busca
+{
+	border-collapse:collapse;
+	width: 100%;
+}
+
+table.formulario
+{
+	border-collapse:collapse;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+table.busca
+{
+	margin-bottom: 20px;
+}
+
+table.busca tr td, table.formulario tr td
+{
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	font-size: 10px;
+	height: 25px;
+}
+
+
+table.grid tr td, table.grid tr th
+{
+	border: 1px solid #666;
+	padding: 4px 2px;
+	font-size: 10px;
+}
+
+table.grid tr.titulo td
+{
+	background: #CCC;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+}
+
+table.busca tr.titulo td
+{
+	font-weight: bold;
+	text-align: left;
+	font-size: 12px;
+}
+
+table.grid tr.titulo th
+{
+	background: #CCC;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+}
+
+table.grid .rodape
+{
+	background: #CCC;
+	font-weight: bold;
+	text-align: right;
+	font-size: 12px;
+}
+
+table.grid tr.linha_1 td
+{
+	background: #FFFFFF;
+}
+
+table.grid tr.linha_2 td
+{
+	background: #EFEFEF;
+}
+
+table.grid tr.linha_3 td
+{
+	background: #FFFFCF;
+}
+
+.busca_txb
+{
+	font-size: 10px;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+}
+
+.busca_sl
+{
+	font-size: 10px;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+}
+
+.txb
+{
+	font-size: 10px;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	width: 90%;
+}
+
+.sl
+{
+	font-size: 10px;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	width: 90%;
+}
+
+.busca_txb:hover, .busca_sl:hover,.busca_txb:focus, .busca_sl:focus, .txb:focus, .txb:hover, .sl:focus, .sl:hover
+{
+	background: #EAF8FC;
+}
+
+.btn_buscar
+{
+	width: 85px;
+	background: url(../Img/page_find.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+.btn_add
+{
+	width: 100px;
+	background: url(../Img/add.png) no-repeat 80px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_limpar
+{
+	width: 85px;
+	background: url(../Img/page_refresh.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.btn_incluir
+{
+	width: 85px;
+	background: url(../Img/page_add.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+.btn_adicionar
+{
+	width: 160px;
+	background: url(../Img/user_add.png) no-repeat 130px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+.btn_norma
+{
+	width: 220px;
+	background: url(../Img/page_add.png) no-repeat 190px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_observacoes
+{
+	width: 210px;
+	background: url(../Img/asterisk_orange.png) no-repeat 180px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_proximo
+{
+	width: 85px;
+	background: url(../Img/page_go.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_voltar
+{
+	width: 85px;
+	background: url(../Img/page_back.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_alterar
+{
+	width: 85px;
+	background: url(../Img/page_edit.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_imprimir
+{
+	width: 85px;
+	background: url(../Img/printer.png) no-repeat 60px center #EFEFEF;
+	border: 1px solid #CCC;
+	padding: 4px 2px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.btn_buscar:hover
+{
+	background: url(../Img/page_find.png) no-repeat 60px center #CCC;
+}
+.btn_add:hover
+{
+	background: url(../Img/add.png) no-repeat 80px center #CCC;
+}
+.btn_limpar:hover
+{
+	background: url(../Img/page_refresh.png) no-repeat 60px center #CCC;
+}
+.btn_incluir:hover
+{
+	background: url(../Img/page_add.png) no-repeat 60px center #CCC;
+}
+.btn_adicionar:hover
+{
+	background: url(../Img/user_add.png) no-repeat 130px center #CCC;
+}
+.btn_imprimir:hover
+{
+	background: url(../Img/printer.png) no-repeat 60px center #CCC;
+}
+
+.btn_proximo:hover
+{
+	background: url(../Img/page_go.png)  no-repeat 60px center #CCC;
+}
+
+
+.btn_voltar:hover
+{
+	background: url(../Img/page_back.png) no-repeat 60px center #CCC;
+}
+
+.btn_norma:hover
+{
+	background: url(../Img/page_add.png) no-repeat 190px center #CCC;
+}
+
+.btn_observacoes:hover
+{
+	background: url(../Img/asterisk_orange.png) no-repeat 180px center #CCC;
+}
+
+.grid_0
+{
+	background: #ccc;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 2px;
+}
+
+.titulo_inc
+{
+	font-weight: bold;
+	text-align: left;
+	font-size: 12px;
+}
+
+tr.linha_titulo_inc td
+{
+	background: #EFEFEF;
+}
+
+.pg_ativo {
+	background-position: -652px -62px !important; 	
+	color:#000 !important;
+	cursor: default;	
+}
+
+.titulo_destaque
+{
+	font-weight: bold;
+	text-align: left;
+	font-size: 14px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#erro_sitema
+{
+	height: 100px;
+	background: url(../Img/icone_erro.png) 5px center no-repeat #DFA599;
+	padding-left: 60px;
+	border-top: 2px solid #CF3719;
+	border-bottom: 2px solid #CF3719;
+}
+
+#logo
+{
+	height: 93px;
+	background: url(../Img/fundo_topo.png) repeat-x;
+}
+
+.IdentificacaoCooperativa
+{	
+	padding: 5px 25px; 
+	font-weight: bold; 
+	font-size: 12px;
+	text-align: left; 
+	margin-bottom: 10px; 
+	background: url(../Img/usina.png) no-repeat left center;
+}
+
+span.txb
+{
+	font-size: 10px;
+	border: none;
+	padding: 4px 2px;
+	width: 90%;
+}
+.escondido
+{
+	display: none;
+}
+
+.n_menu
+{
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 20px;
+	list-style: none; 
+}
+
+.n_menu_titulo a, .n_menu_subtitulo a
+{
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+}
+
+.n_menu_subtitulo a:hover
+{
+	text-decoration: underline;
+}
+
+.n_menu_titulo a
+{
+	font-weight: bold;
+	cursor: default;
+	color: #fff;
+}
+
+.n_menu_titulo
+{
+	border-bottom: 2px solid #1C5E6E;
+	border-left: 2px solid #1C5E6E;
+	padding: 3px;
+	background: #78C1C8;
+}
+
+.n_menu_subtitulo
+{
+	border-right: 2px solid #1C5E6E;
+	padding-left: 5px;
+	
+}
+
+#Tamanho
+{
+	margin-left: 10px;
+}
+
+table.grid tr:hover, table.grid tr.linha_2:hover td
+{
+	background: #E0EAEF;
+}
+
+.titulo_topicos
+{
+	background: url(../img/page_green.png) no-repeat left center;
+	padding: 6px 0px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 10px;
+	color: #1C5E6E;
+	
+}
