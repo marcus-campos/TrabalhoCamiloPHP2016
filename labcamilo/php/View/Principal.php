@@ -1,13 +1,18 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors","On");
 
 include '../Controller/StoreController.php';
 use php\Controller\StoreController\StoreController as StoreController;
 
-if(isset($_POST['tv'])) {
+$hPesquisa = false;
+
+if(isset($_POST['enviar'])) {
     $store = new StoreController();
-    echo $store->store(array($_POST));
+    $store->store(array($_POST));
+}
+
+if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
+{
+    $hPesquisa = true;
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -31,6 +36,7 @@ if(isset($_POST['tv'])) {
     <script src="../../assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 </head>
 <body>
+
     <form id="form1" runat="server" method="post">
     
         <div id="DIV_Maior" style="max-width: 960px; margin:auto;">
@@ -40,25 +46,23 @@ if(isset($_POST['tv'])) {
             </div>
             <ul class="tabs">
                 <li><a href="#" class="pg_ativo">Gerenciador</a> </li>
+                <li><?=$hPesquisa==true?"<a href='Resultado.php'>Exibir pesquisa":""?></li>
             </ul>
-      
-        <!--<h2 class="form-signin-heading">Calculando IMC</h2>
-        <label for="txbPeso" class="sr-only">Peso</label>
-        <input type="text" id="txbPeso" name="txbPeso" class="form-control" placeholder="Peso" required>
 
-        <label for="txbAltura" class="sr-only">Altura</label>
-        <input type="text" id="txbAltura" name="txbAltura" class="form-control" placeholder="Altura" required>
-        
-        <button class="btn btn-lg btn-primary btn-block" name="enviar" type="submit">Calcular</button>-->
-       <div class="pane">
-            <div class="base">
-				<div>
-        <div class="page-title" align="center">
+<div class="pane">
+    <div class="base">
+        <div>
+            <br>
+            <div>
+                    <label for="usr">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" />
+            </div>
+            <hr>
+            <div class="page-title" align="center">
                 Grau de Instrução do chefe de família
             </div>
-
               <div>
-                  <table id="TB_Cadastro_Restaurante" runat="server"  align="center" border="1px" width="550px">
+                  <table id="" runat="server"  align="center" border="1px" width="550px">
                             <tr class="active titulo">
                                 <td>
                                    
@@ -166,9 +170,11 @@ if(isset($_POST['tv'])) {
                             
 				</table>
 				</div>
+
+                <hr>
                 <div class="page-title" align="center">
                    Posse de itens
-                   </div>
+                </div>
             
                             
                   <table id="" runat="server" class=" table2 table-striped" align="center" border="1px" width="550px" margin="1000px 1000px 1000px 1000px">
@@ -448,14 +454,13 @@ if(isset($_POST['tv'])) {
               </table> 
               </div>
 
-
+              <hr>
               <div>
-
                 <div class="page-title" align="center">
                    Renda Chefe de família
                 </div>
 
-                  <table id="TB_Cadastro_Restaurante" runat="server"  align="center" border="1px" width="550px">
+                  <table id="" runat="server"  align="center" border="1px" width="550px">
                             <tr class="active titulo">
                                 <td>
                                    
@@ -482,7 +487,7 @@ if(isset($_POST['tv'])) {
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_Acima20salario" value="a">
+                      <input type="checkbox" name="ck_acima20salarios" value="0">
                 </center>
                               </td>
                             </tr>
@@ -498,7 +503,7 @@ if(isset($_POST['tv'])) {
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_10A20" value="b">
+                  <input type="checkbox" name="ck_10A20" value="1">
                 </center>
                               </td>
                             </tr>
@@ -514,7 +519,7 @@ if(isset($_POST['tv'])) {
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_4A10" value="c">
+                  <input type="checkbox" name="ck_4A10" value="2">
                 </center>
                               </td>
                             </tr>
@@ -530,7 +535,7 @@ if(isset($_POST['tv'])) {
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_2A4" value="d">
+                  <input type="checkbox" name="ck_2A4" value="3">
                 </center>
                               </td>
                             </tr>
@@ -546,16 +551,8 @@ if(isset($_POST['tv'])) {
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_ate2Sm" value="e">
+                  <input type="checkbox" name="ck_ate2sm" value="4">
                 </center>                              
-                </td>
-                            </tr>
-              <tr id="tr" border="0px">
-                                <td colspan="6" border="0px">
-                <center>
-                   <a class="btn blue" href="index.php">Voltar</a>
-                                   <button class="btn blue" name="enviar" type="submit">Enviar</button>
-                                </center>
                 </td>
                             </tr>
                              
@@ -565,7 +562,12 @@ if(isset($_POST['tv'])) {
              
           </div>
         </div>
-      </div> 
+      </div>
+        <hr>
+        <center>
+            <button class="btn blue" name="enviar" type="submit">Enviar</button>
+        </center>
+        <br>
       </form>
 
   </body>
