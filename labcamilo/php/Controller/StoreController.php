@@ -1,17 +1,15 @@
 <?php
-    namespace php\Controller\StoreController;
 
-    include '../Model/StoreModel.php';
+namespace php\Controller\StoreController;
 
-    use php\Model\StoreModel;
+include '../Model/StoreModel.php';
+use php\Model\StoreModel;
 
-    class StoreControler{
-
-    public function storeArray($_POST)
+class StoreController
+{
+    public function store($post)
     {
         $sMod = new StoreModel\StoreModel;
-        return $sMod->storeArray($_POST);
+        return $sMod->storeArray($post);
     }
-
 }
-
