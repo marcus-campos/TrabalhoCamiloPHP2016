@@ -8,6 +8,8 @@ $hPesquisa = false;
 if(isset($_POST['enviar'])) {
     $store = new StoreController();
     $store->store(array($_POST));
+
+    header('Location: ../View/Resultado.php');
 }
 
 if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
@@ -46,7 +48,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
             </div>
             <ul class="tabs">
                 <li><a href="#" class="pg_ativo">Gerenciador</a> </li>
-                <li><?=$hPesquisa==true?"<a href='Resultado.php'>Exibir pesquisa":""?></li>
+                <li><?=$hPesquisa==true?"<a href='Resultado.php'>Exibir pesquisa</a>":""?></li>
             </ul>
 
 <div class="pane">
@@ -89,7 +91,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
 								<center>
-									<input type="checkbox" name="ck_analfabeto" value="0">
+									<input type="radio" name="rb_analfabeto" value="0">
 								</center>
                               </td>
                             </tr>
@@ -105,7 +107,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
 								<center>
-									<input type="checkbox" name="ck_primario" value="1">
+									<input type="radio" name="rb_primario" value="1">
 								</center>
                               </td>
                             </tr>
@@ -121,7 +123,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
 								<center>
-									<input type="checkbox" name="ck_fundamental" value="1">
+									<input type="radio" name="rb_fundamental" value="2">
 								</center>
                               </td>
                             </tr>
@@ -137,7 +139,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
 								<center>
-									<input type="checkbox" name="ck_medio" value="4">
+									<input type="radio" name="rb_medio" value="3">
 								</center>
                               </td>
                             </tr>
@@ -153,7 +155,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
 								<center>
-									<input type="checkbox" name="ck_superior" value="8">
+									<input type="radio" name="rb_superior" value="4">
 								</center>                              
 							  </td>
                             </tr>
@@ -487,7 +489,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
                 <center>
-                      <input type="checkbox" name="ck_acima20salarios" value="0">
+                      <input type="radio" name="rb_acima20salarios" value="0">
                 </center>
                               </td>
                             </tr>
@@ -503,7 +505,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_10A20" value="1">
+                  <input type="radio" name="rb_10A20" value="1">
                 </center>
                               </td>
                             </tr>
@@ -519,7 +521,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_4A10" value="2">
+                  <input type="radio" name="rb_4A10" value="2">
                 </center>
                               </td>
                             </tr>
@@ -535,7 +537,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_2A4" value="3">
+                  <input type="radio" name="rb_2A4" value="3">
                 </center>
                               </td>
                             </tr>
@@ -551,7 +553,7 @@ if(isset($_SESSION['pesquisa']) && $_SESSION['pesquisa'] != NULL)
 
                               <td>
                 <center>
-                  <input type="checkbox" name="ck_ate2sm" value="4">
+                  <input type="radio" name="rb_ate2sm" value="4">
                 </center>                              
                 </td>
                             </tr>

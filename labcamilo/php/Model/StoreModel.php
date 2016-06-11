@@ -7,11 +7,11 @@ class StoreModel{
     {
         $array = [
             "nome" => $post[0]['nome'],
-            "analf" => $post[0]['ck_analfabeto'],
-            "pri" => $post[0]['ck_primario'],
-            "fund" => $post[0]['ck_fundamental'],
-            "medio" => $post[0]['ck_medio'],
-            "sup" => $post[0]['ck_superior'],
+            "analf" => $post[0]['rb_analfabeto'],
+            "pri" => $post[0]['rb_primario'],
+            "fund" => $post[0]['rb_fundamental'],
+            "medio" => $post[0]['rb_medio'],
+            "sup" => $post[0]['rb_superior'],
             "tv" => $post[0]['tv'],
             "ra" => $post[0]['ra'],
             "ba" => $post[0]['ba'],
@@ -21,16 +21,14 @@ class StoreModel{
             "dvd" => $post[0]['dvd'],
             "gel" => $post[0]['gel'],
             "free" => $post[0]['free'],
-            "acima20" => $post[0]['ck_acima20salarios'],
-            "de10a20" => $post[0]['ck_10A20'],
-            "de4a10" => $post[0]['ck_4A10'],
-            "de2a4" => $post[0]['ck_2A4'],
-            "ate2" => $post[0]['ck_ate2sm'],
+            "acima20" => $post[0]['rb_acima20salarios'],
+            "de10a20" => $post[0]['rb_10A20'],
+            "de4a10" => $post[0]['rb_4A10'],
+            "de2a4" => $post[0]['rb_2A4'],
+            "ate2" => $post[0]['rb_ate2sm'],
         ];
 
         $_SESSION['pesquisa'][] = $array;
-
-        var_dump($_SESSION['pesquisa']);
     }
 
 }
